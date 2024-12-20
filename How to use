@@ -1,0 +1,45 @@
+local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/wJy2dzP0"))()
+
+local ui = UILibrary:CreateWindow("CapybaraScript", "By CapybaraScripts v5")
+
+local tab1 = ui:CreateTab("Tab 1")
+local tab2 = ui:CreateTab("Tab 2")
+
+ui:CreateToggle(tab1, "Activar opción 1", false, function(state)
+    print("Opción 1 activada: " .. tostring(state))
+end)
+
+ui:CreateButton(tab1, "Botón 1", function()
+    print("¡Botón 1 presionado!")
+end)
+ui:CreateButton(tab1, "Botón 2", function()
+    print("¡Botón 2 presionado!")
+end)
+
+ui:CreateSlider(tab1, "Ejemplo de control deslizante", 0, 10, 0.1, 0.1, function(value)
+    print("Nuevo valor: " .. value)
+end)
+
+ui:CreateDropdown(tab1, "Selecciona una opción", {"Opción 1", "Opción 2", "Opción 3"}, "Opción 1", function(selectedOption)
+    print("Opción seleccionada: " .. selectedOption)
+end)
+
+ui:CreateParagraph(tab1, "hsshejwhwjwn")
+
+ui:CreateButton(tab1, "Botón 2", function()
+    print("¡Botón 2 presionado!")
+end)
+
+ui:CreateSection(tab1, "Sección 1 lit")
+
+ui:CreateButton(tab1, "Botón 2", function()
+    print("¡Botón 2 presionado!")
+end)
+
+UILibrary:CreateButtontoggle()
+
+local correctPassword = "xd"
+local linkToCopy = "https://xd"
+local premiumUserIds = {2784663867}
+
+UILibrary:keySistema("Acceso Restringido", "Ingresa la contraseña para continuar.", "Go", correctPassword, linkToCopy, premiumUserIds)
